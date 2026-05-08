@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Sözlükhane
 {
-    public partial class anasayfa : Form
+    public partial class Deyim_sozluk : Form
     {
-        public anasayfa()
+        public Deyim_sozluk()
         {
             InitializeComponent();
         }
 
-        private void deyimlerSözlükToolStripMenuItem_Click(object sender, EventArgs e)
+        private void türkçeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Deyim_sozluk Deyim_sozluk = new Deyim_sozluk();
-            Deyim_sozluk.Show();
+            anasayfa anasayfa = new anasayfa();
+            anasayfa.Show();
             this.Hide();
             timer1.Stop();
         }

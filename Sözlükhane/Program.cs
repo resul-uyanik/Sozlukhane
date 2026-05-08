@@ -16,7 +16,7 @@ namespace Sözlükhane
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new baglan());
+            Application.Run(new anasayfa());
         }
     }
 }
