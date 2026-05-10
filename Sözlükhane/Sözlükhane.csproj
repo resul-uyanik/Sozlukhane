@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="anasayfa.cs">
+    <Compile Include="Turkce_sozluk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="anasayfa.Designer.cs">
-      <DependentUpon>anasayfa.cs</DependentUpon>
+    <Compile Include="Turkce_sozluk.Designer.cs">
+      <DependentUpon>Turkce_sozluk.cs</DependentUpon>
     </Compile>
     <Compile Include="baglan.cs">
       <SubType>Form</SubType>
@@ -75,8 +75,8 @@
     <Compile Include="Deyim_sozluk.Designer.cs">
       <DependentUpon>Deyim_sozluk.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="anasayfa.resx">
-      <DependentUpon>anasayfa.cs</DependentUpon>
+    <EmbeddedResource Include="Turkce_sozluk.resx">
+      <DependentUpon>Turkce_sozluk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="baglan.resx">
       <DependentUpon>baglan.cs</DependentUpon>

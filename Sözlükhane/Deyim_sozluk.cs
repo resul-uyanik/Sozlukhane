@@ -19,7 +19,7 @@ namespace Sözlükhane
 
         private void türkçeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            anasayfa anasayfa = new anasayfa();
+            Turkce_sozluk anasayfa = new Turkce_sozluk();
             anasayfa.Show();
             this.Hide();
             timer1.Stop();

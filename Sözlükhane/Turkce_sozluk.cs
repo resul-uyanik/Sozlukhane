@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sözlükhane
 {
-    public partial class anasayfa : Form
+    public partial class Turkce_sozluk : Form
     {
-        public anasayfa()
+        public Turkce_sozluk()
         {
             InitializeComponent();
         }
