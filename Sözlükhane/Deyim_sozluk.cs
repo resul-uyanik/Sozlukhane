@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Threading;
 
 namespace Sözlükhane
 {
     public partial class Deyim_sozluk : Form
     {
+        private string connectionString;
         public Deyim_sozluk()
         {
             InitializeComponent();
+            connectionString = ConfigurationManager.ConnectionStrings["SozlukhaneConnectionString"].ConnectionString;
+
         }
 
         private void türkçeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -23,6 +29,35 @@ namespace Sözlükhane
             anasayfa.Show();
             this.Hide();
             timer1.Stop();
+        }
+
+        private void btn_select_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Deyim_sozluk_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand("sp_select_Table_deyim_sozluk", connection))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        DataTable dt = new DataTable();
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        connection.Open();
+                        da.Fill(dt);
+                        dataGridView1.DataSource = dt;
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata = " + ex.Message);
+            }
         }
     }
 }

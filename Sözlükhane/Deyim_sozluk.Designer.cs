@@ -46,7 +46,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(153, 118);
+            this.label1.Location = new System.Drawing.Point(368, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(181, 25);
             this.label1.TabIndex = 6;
@@ -55,17 +55,17 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 163);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 147);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(727, 255);
+            this.dataGridView1.Size = new System.Drawing.Size(1155, 454);
             this.dataGridView1.TabIndex = 5;
             // 
             // txt_kelime
             // 
             this.txt_kelime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_kelime.Location = new System.Drawing.Point(352, 116);
+            this.txt_kelime.Location = new System.Drawing.Point(567, 100);
             this.txt_kelime.Multiline = true;
             this.txt_kelime.Name = "txt_kelime";
             this.txt_kelime.Size = new System.Drawing.Size(160, 31);
@@ -79,7 +79,7 @@
             this.türkçeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1191, 36);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -97,7 +97,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(0, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 44);
+            this.panel1.Size = new System.Drawing.Size(1191, 44);
             this.panel1.TabIndex = 8;
             // 
             // label2
@@ -105,7 +105,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(250, 0);
+            this.label2.Location = new System.Drawing.Point(405, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(324, 46);
             this.label2.TabIndex = 9;
@@ -115,7 +115,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 498);
+            this.ClientSize = new System.Drawing.Size(1191, 613);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label1);
@@ -123,6 +123,7 @@
             this.Controls.Add(this.txt_kelime);
             this.Name = "Deyim_sozluk";
             this.Text = "Deyim_sozluk";
+            this.Load += new System.EventHandler(this.Deyim_sozluk_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -37,7 +37,11 @@
       <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=10.0.0.8, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.10.0.8\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +53,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SozlukDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SozlukDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SozlukDbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SozlukDbDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Turkce_sozluk.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +110,7 @@
     <EmbeddedResource Include="Deyim_sozluk.resx">
       <DependentUpon>Deyim_sozluk.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,6 +120,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SozlukDbDataSet.xsc">
+      <DependentUpon>SozlukDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SozlukDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SozlukDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SozlukDbDataSet.xss">
+      <DependentUpon>SozlukDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SozlukDbDataSet1.xsc">
+      <DependentUpon>SozlukDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SozlukDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SozlukDbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SozlukDbDataSet1.xss">
+      <DependentUpon>SozlukDbDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
