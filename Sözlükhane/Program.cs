@@ -16,7 +16,7 @@ namespace Sözlükhane
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Turkce_sozluk());
+            Application.Run(new baglan());
         }
     }
 }

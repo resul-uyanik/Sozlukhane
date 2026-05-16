@@ -25,10 +25,7 @@ namespace Sözlükhane
 
         private void deyimlerSözlükToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Deyim_sozluk Deyim_sozluk = new Deyim_sozluk();
-            Deyim_sozluk.Show();
-            this.Hide();
-            timer1.Stop();
+            
         }
 
         private void Turkce_sozluk_Load(object sender, EventArgs e)
@@ -46,6 +43,9 @@ namespace Sözlükhane
                         da.Fill(dt);
                         dataGridView1.DataSource = dt;
                         label4.Text = dataGridView1.Rows.Count.ToString() + " adet kayıt bulundu";
+                        
+                        dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                        dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
                     }
                 }
             }
@@ -77,6 +77,8 @@ namespace Sözlükhane
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
+                
+                dataGridView1.AllowUserToAddRows = false;
                 label4.Text = dataGridView1.Rows.Count.ToString() + " adet kayıt bulundu";
             }
             catch (Exception ex)

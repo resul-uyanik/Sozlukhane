@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.deyimlerSözlükToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txt_kelime = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,21 +46,11 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deyimlerSözlükToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1138, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1138, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // deyimlerSözlükToolStripMenuItem
-            // 
-            this.deyimlerSözlükToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.deyimlerSözlükToolStripMenuItem.Name = "deyimlerSözlükToolStripMenuItem";
-            this.deyimlerSözlükToolStripMenuItem.Size = new System.Drawing.Size(178, 32);
-            this.deyimlerSözlükToolStripMenuItem.Text = "Deyimler sözlük";
-            this.deyimlerSözlükToolStripMenuItem.Click += new System.EventHandler(this.deyimlerSözlükToolStripMenuItem_Click);
             // 
             // txt_kelime
             // 
@@ -155,8 +143,6 @@
             this.Name = "Turkce_sozluk";
             this.Text = "Türkce_sözluk";
             this.Load += new System.EventHandler(this.Turkce_sozluk_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -168,7 +154,6 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem deyimlerSözlükToolStripMenuItem;
         private System.Windows.Forms.TextBox txt_kelime;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
